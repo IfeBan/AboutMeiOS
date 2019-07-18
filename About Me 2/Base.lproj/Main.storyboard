@@ -38,17 +38,17 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="l3g-p8-j1i">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="l3g-p8-j1i">
                                         <rect key="frame" x="0.0" y="20.5" width="390" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-Ui-qkJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="193" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="239" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biF-hs-lCC">
-                                                <rect key="frame" x="197" y="0.0" width="193" height="20.5"/>
+                                                <rect key="frame" x="243" y="0.0" width="147" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -57,11 +57,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-Xu-Yhh">
+                                <rect key="frame" x="144.5" y="420" width="125" height="30"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7t1-v7-BKQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="m0z-Xu-Yhh" firstAttribute="centerX" secondItem="IEH-sL-0Ob" secondAttribute="centerX" id="ITF-Of-Ooa"/>
                             <constraint firstItem="IEH-sL-0Ob" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="YaH-JG-gun"/>
                             <constraint firstItem="IEH-sL-0Ob" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="ZsN-Ey-dWy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m0z-Xu-Yhh" secondAttribute="bottom" constant="412" id="hix-Qu-Kco"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IEH-sL-0Ob" secondAttribute="trailing" constant="12" id="vFz-2a-s6k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="61"/>
+            <point key="canvasLocation" x="-536" y="49"/>
         </scene>
     </scenes>
 </document>
